@@ -8,6 +8,9 @@
       "ESNext.AsyncIterable",
       "DOM"
     ],
+    "vueCompilerOptions.target": {
+      "target":2.7
+    },
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowJs": true,
