@@ -8,9 +8,6 @@
       "ESNext.AsyncIterable",
       "DOM"
     ],
-    "vueCompilerOptions.target": {
-      "target":2.7
-    },
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowJs": true,
@@ -32,6 +29,9 @@
       "@nuxtjs/axios",
       "@types/node"
     ]
+  },
+  "vueCompilerOptions": {
+    "target": 2.7,
   },
   "exclude": [
     "node_modules",
