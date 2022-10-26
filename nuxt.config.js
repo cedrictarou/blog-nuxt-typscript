@@ -53,6 +53,15 @@ export default {
       lang: 'en'
     }
   },
+  typescript: {
+    // ファイル保存後にESLintを実行する
+    // Doc: https://typescript.nuxtjs.org/guide/lint/
+    typeCheck: {
+      eslint: {
+        files: './**/*.{ts,js,vue}'
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

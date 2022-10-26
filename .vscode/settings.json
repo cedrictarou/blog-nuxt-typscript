@@ -1,3 +1,7 @@
 {
-  "prettier.enable": false
+  "prettier.enable": false,
+  "vetur.format.defaultFormatter.js": "prettier",
+  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+  "solargraph.formatting": true,
+  "vetur.format.defaultFormatter.ts": "vscode-typescript"
 }
