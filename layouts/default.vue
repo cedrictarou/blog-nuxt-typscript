@@ -9,10 +9,5 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component
-export default class DefaultLayout extends Vue {
-  mounted() {
-    // this.$vuetifyが使用できるようになる
-    console.log(this.$vuetify)
-  }
-}
+export default class DefaultLayout extends Vue { }
 </script>

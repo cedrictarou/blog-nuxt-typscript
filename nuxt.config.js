@@ -18,7 +18,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/vuetify'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -61,6 +61,11 @@ export default {
     },
   },
   vuetify: {
+    // カスタムCSSファイルパス
+    customVariables: ['~/assets/sass/variables.scss'],
+    // treeShake: カスタムCSSを有効にするフラグ
+    // Doc: https://vuetifyjs.com/en/features/sass-variables/#nuxt-install
+    treeShake: true,
     theme: {
       themes: {
         light: {

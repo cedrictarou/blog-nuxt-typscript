@@ -1,0 +1,30 @@
+/*
+  Lightテーマカスタマイズ
+  Code: https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/src/styles/settings/_light.scss
+*/
+$material-light: (
+  'background': #f7f9fa
+);
+
+/*
+  オリジナルブレイクポイントを追加する
+  Code: https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/src/styles/settings/_variables.scss#L41
+*/
+$grid-breakpoints: (
+  'mobile': 426px,
+  'ipad': 768px
+);
+
+/*
+  独自のブレイクポイントで表示・非表示を切り替えるCSSクラスの追加
+  Code: https://github.com/vuetifyjs/vuetify/blob/master/packages/vuetify/src/styles/settings/_variables.scss#L81
+
+  ipad-and-down: 767以下, ipad-and-up: 768以上
+  mobile-and-down: 425以下, ipad-and-up: 426以上
+*/
+$display-breakpoints: (
+  'ipad-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, ' ipad') - 1})',
+  'ipad-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, ' ipad')})',
+  'mobile-and-down': 'only screen and (max-width: #{map-get($grid-breakpoints, ' mobile') - 1})',
+  'mobile-and-up': 'only screen and (min-width: #{map-get($grid-breakpoints, ' mobile')})'
+);
