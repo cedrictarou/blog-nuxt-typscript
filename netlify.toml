@@ -1,0 +1,7 @@
+# Doc: https://docs.netlify.com/configure-builds/file-based-configuration/
+# ビルド設定
+[build]
+  # 公開ディレクトリ
+  publish = "dist"
+  # 実行コマンド(target: 'static')
+  command = "npm run generate"

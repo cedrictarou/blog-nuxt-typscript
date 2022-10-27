@@ -25,6 +25,9 @@
       <v-icon>
         $vuetify.icons.macOs
       </v-icon>
+      <p>
+        netlify:deployコマンド正常稼働のテスト
+      </p>
     </v-container>
   </div>
 </template>

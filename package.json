@@ -2,8 +2,11 @@
   "name": "blog-nuxt-typscript",
   "version": "1.0.0",
   "private": true,
+  "config": {
+    "publish_dir": "dist"
+  },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "npm run rm:publish_dir && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -11,7 +14,9 @@
     "lint": "npm run lint:js",
     "lintfix": "npm run lint:js -- --fix",
     "test": "jest",
-    "netlify": "netlify"
+    "rm:publish_dir": "rm -rf $npm_package_config_publish_dir",
+    "netlify": "netlify",
+    "netlify:deploy": "npm run rm:publish_dir && netlify deploy --build --prod --open"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
