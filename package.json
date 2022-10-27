@@ -10,7 +10,8 @@
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "lintfix": "npm run lint:js -- --fix",
-    "test": "jest"
+    "test": "jest",
+    "netlify": "netlify"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -38,6 +39,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "jest": "^27.4.4",
+    "netlify-cli": "^12.0.11",
     "prettier": "^2.7.1",
     "ts-jest": "^27.1.1",
     "vue-jest": "^3.0.4"
