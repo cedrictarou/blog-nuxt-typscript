@@ -1,7 +1,9 @@
 {
-  "prettier.enable": false,
-  "vetur.format.defaultFormatter.js": "prettier",
-  "docker.languageserver.formatter.ignoreMultilineInstructions": true,
-  "solargraph.formatting": true,
-  "vetur.format.defaultFormatter.ts": "vscode-typescript"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

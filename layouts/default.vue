@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <v-app>
+    <v-main>
+      <nuxt />
+    </v-main>
+  </v-app>
 </template>
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'DefaultLayout'
-})
+import { Component, Vue } from 'nuxt-property-decorator'
+
+@Component
+export default class DefaultLayout extends Vue {
+  mounted() {
+    // this.$vuetifyが使用できるようになる
+    console.log(this.$vuetify)
+  }
+}
 </script>
